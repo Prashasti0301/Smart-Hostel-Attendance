@@ -1,0 +1,13 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Smart Hostel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="face_enroll_instruction">Align your face within the oval</string>
+    <string name="camera_starting">Camera starting...</string>
+    <string name="camera_ready">Camera ready. Smile!</string>
+    <string name="processing_face">Processing face...</string>
+    <string name="face_captured">Face captured successfully!</string>
+    <string name="capture_failed">Capture failed</string>
+
+</resources>

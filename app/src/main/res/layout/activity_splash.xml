@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <!-- Professional Logo Container with Shadow -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo with Professional Shadow and Border -->
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/logo_container_background"
+            android:padding="20dp">
+
+            <!-- App Logo with Professional Styling -->
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="invisible"
+                android:scaleType="centerInside"
+                android:contentDescription="Smart Hostel App Logo" />
+
+        </FrameLayout>
+
+        <!-- App Name with Professional Typography -->
+        <TextView
+            android:id="@+id/appNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SmartHostel"
+            android:textColor="#2C3E50"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.03"
+            android:alpha="0.0"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- App Tagline with Professional Styling -->
+        <TextView
+            android:id="@+id/taglineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Intelligent Attendance System"
+            android:textColor="#7F8C8D"
+            android:textSize="16sp"
+            android:letterSpacing="0.02"
+            android:alpha="0.0"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+
+    <!-- Professional Bottom Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="50dp">
+
+        <!-- Animated Loading Dots -->
+        <LinearLayout
+            android:id="@+id/loadingDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <View
+                android:id="@+id/dot1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/loading_dot"
+                android:alpha="0.3" />
+
+            <View
+                android:id="@+id/dot2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/loading_dot"
+                android:alpha="0.6" />
+
+            <View
+                android:id="@+id/dot3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/loading_dot"
+                android:alpha="0.9" />
+
+        </LinearLayout>
+
+        <!-- Loading Text -->
+        <TextView
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Initializing secure system..."
+            android:textColor="#95A5A6"
+            android:textSize="14sp"
+            android:letterSpacing="0.01"
+            android:alpha="0.0"
+            android:fontFamily="sans-serif" />
+
+        <!-- Version Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Version 2.1.0"
+            android:textColor="#BDC3C7"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+
+</RelativeLayout>
