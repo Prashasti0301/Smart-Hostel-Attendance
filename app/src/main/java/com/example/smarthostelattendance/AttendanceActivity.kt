@@ -161,11 +161,11 @@ class AttendanceActivity : AppCompatActivity() {
 
             if (isWithinBoundary) {
                 binding.btnMarkAttendance.isEnabled = true
-                binding.btnMarkAttendance.text = "✅ MARK CHECK-IN"
+                binding.btnMarkAttendance.text = "MARK CHECK-IN"
                 binding.tvStatus.setTextColor(ContextCompat.getColor(this, android.R.color.holo_green_dark))
             } else {
                 binding.btnMarkAttendance.isEnabled = false
-                binding.btnMarkAttendance.text = "❌ OUTSIDE HOSTEL"
+                binding.btnMarkAttendance.text = " OUTSIDE HOSTEL"
                 binding.tvStatus.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_dark))
             }
         }
@@ -195,7 +195,7 @@ class AttendanceActivity : AppCompatActivity() {
                     logAttendanceSuccess()
                 }
                 .addOnFailureListener { e ->
-                    Toast.makeText(this, "❌ Error: ${e.message}", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, " Error: ${e.message}", Toast.LENGTH_LONG).show()
                 }
         } ?: run {
             Toast.makeText(this, "Location not available!", Toast.LENGTH_SHORT).show()
@@ -232,7 +232,7 @@ class AttendanceActivity : AppCompatActivity() {
         firestore.collection("attendance_records")
             .add(checkOutData)
             .addOnSuccessListener {
-                Toast.makeText(this, "✅ Check-out recorded!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, " Check-out recorded!", Toast.LENGTH_SHORT).show()
             }
     }
 

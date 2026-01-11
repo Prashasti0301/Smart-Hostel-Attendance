@@ -4,16 +4,16 @@ import android.location.Location
 
 object HostelBoundary {
 
-    // ✅ YOUR HOSTEL COORDINATES (Already correct)
+    //  YOUR HOSTEL COORDINATES (Already correct)
     private const val HOSTEL_LATITUDE = 24.433093
     private const val HOSTEL_LONGITUDE = 77.159908
 
-    // ✅ Radius adjusted (10000m = 10km - too big! Reduce it)
+    //  Radius adjusted (10000m = 10km - too big! Reduce it)
     private const val ALLOWED_RADIUS_METERS = 100.0 // Changed to 100m
 
     data class BoundaryPoint(val latitude: Double, val longitude: Double)
 
-    // ❌ DELETE THIS OLD POLYGON (Delhi coordinates)
+    //  DELETE THIS OLD POLYGON (Delhi coordinates)
     // private val hostelPolygon = listOf(
     //     BoundaryPoint(28.6145, 77.2085),
     //     BoundaryPoint(28.6140, 77.2095),
@@ -21,7 +21,7 @@ object HostelBoundary {
     //     BoundaryPoint(28.6138, 77.2080)
     // )
 
-    // ✅ CREATE NEW POLYGON WITH YOUR HOSTEL COORDINATES
+    //  CREATE NEW POLYGON WITH YOUR HOSTEL COORDINATES
     private val hostelPolygon = listOf(
         // Create a square around your hostel (approx 200m x 200m)
         // Point 1: Northwest corner
@@ -131,7 +131,7 @@ object HostelBoundary {
             " ${"%.0f".format(distance)}m away"
         }
     }
-    //change 1 here
+
 
     /**
      * NEW: Get simple status for button
